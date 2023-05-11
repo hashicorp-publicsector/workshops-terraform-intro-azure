@@ -1,0 +1,13 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
+version: "2"
+virtualmachines:
+- name: workstation
+  image: instruqt-hashicorp/ubuntu-base
+  shell: /bin/bash -l
+  machine_type: n1-standard-1
+azure_subscriptions:
+- name: terraform
+  roles:
+  - Owner
